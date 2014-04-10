@@ -41,7 +41,8 @@ public class WallperThread extends Thread {
     {
         while (mCanRunning) {
             try {
-                Thread.sleep(10000);
+                //每15秒切换一张壁纸
+                Thread.sleep(15000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
